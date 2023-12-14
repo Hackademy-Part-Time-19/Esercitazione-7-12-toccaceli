@@ -12,34 +12,102 @@
 
 <body style="background-color: black;">
 
+
+    <nav class="navbar" style="position: fixed;">
+        <div style="display: flex;justify-content: space-between;align-items: center;">
+            <h3 class="logo">Presto</h3>
+            <a href="url_uomo" class="linkNavbar">Uomo</a>
+            <a href="url_donna" class="linkNavbar1">Donna</a>
+            <a href="url_bambini" class="linkNavbar1">Bambini</a>
+            <a href="url_ideeRegalo" class="linkNavbar1" style="text-decoration: none;">Regali</a>
+            <input id="Ricerca" placeholder="Search" class="navSearch">
+            <button onclick="Registrazione()" class="Btnregistrazione">Registrati</button>
+        </div>
+    </nav>
+
     <div id="PrimaPagina" style="width: 100%;height: 100vh;">
 
         <div id="containerPrimaPagina" style="width: 100%;height: 100px;">
 
-            <img class="backgroundPaginaprincipale" src="Immaginii/WhatsApp Image 2023-12-07 at 21.28.07.jpeg"
-                alt="Balenciaga">
 
-            <div style="display: flex;position: fixed;width: 100%;">
+            <video width="100%" height="900px" style="margin-top: 30px;" autoplay loop muted playsinline>
+                <source src="Immaginii/coverr-friends-posing-against-car-1453-1080p.mp4" type="video/mp4" />
+            </video>
 
-                <h1 class="logo">PRESTO</h1>
-
-
-                <h3 onclick="portaCatalogo()" class="Btncatalogo"> Catalogo</h3>
-
-                <button onclick="vaiRegistrazione()" class="Btnregistrazione">
-                    Registrati </button>
-            </div>
 
         </div>
 
+        <div style="position: relative;display: flex;justify-content: center;align-items: center;margin-top: 550px;">
+
+            <div class="filtroricerca">
+                <p style="color: white;margin-left: 5px;font-size: 20px;text-align: center;">Prodotto</p>
+                <select name="Prodotto" id="selezioneProdotto" class="selectFiltro">
+                    <option value="Uomo">Uomo</option>
+                    <option value="Donna">Donna</option>
+                    <option value="Bambino">Bambino</option>
+
+
+                </select>
+
+            </div>
+
+            <div class="filtroricerca">
+
+                <p style="color: white;margin-left: 5px;font-size: 20px;text-align: center;">Prezzo</p>
+                <select name="Prodotto" id="selezioneProdotto" class="selectFiltro" style="font-size: 17px;">
+                    <option value="prezzo">0-100$</option>
+                    <option value="prezzo1">100-300$</option>
+                    <option value="prezzo2">300-500$</option>
+                </select>
+
+
+            </div>
+
+            <button class="filtroricercaBtn">
+                <h4 style="text-align: center;color: white;margin-top: 10px;">Cerca</h4>
+            </button>
+
+        </div>
     </div>
 
 
     <div style="height: 0px;">
-        <h1 style="color: white; font-size:30px;text-align: center;margin-top: 10px;"> "La tua vita risulta più
+        <h1 class="h1Frase"> "La tua vita risulta più
             interessante se indossi abiti con un’identità." - Vivienne Westwood -</h1>
     </div>
 
+
+    <div id="secondaPagina1" class="secondaPagina1">
+
+        <div id="containerCard1" class="containerCard1">
+
+            <div class="primeCard"> <img src="Immaginii/giacca.jpeg" alt="Giacca" style="height: 400px;
+                width: 300px;">
+                <h5 style="color: white;margin-top: 10px;"> Giacca-camicia Jackson</h5>
+                <h6 style="color: white;">79,00$</h6>
+            </div>
+
+            <div class="primeCard"> <img src="Immaginii/giacca.jpeg" alt="Giacca" style="height: 400px;
+                    width: 300px;">
+                <h5 style="color: white;margin-top: 10px;"> Giacca-camicia Jackson</h5>
+                <h6 style="color: white;">79,00$</h6>
+            </div>
+
+
+            <div class="primeCard"> <img src="Immaginii/giacca.jpeg" alt="Giacca" style="height: 400px;
+                        width: 300px;">
+                <h5 style="color: white;margin-top: 10px;"> Giacca-camicia Jackson</h5>
+                <h6 style="color: white;">79,00$</h6>
+            </div>
+
+
+            <div class="primeCard"> <img src="Immaginii/giacca.jpeg" alt="Giacca" style="height: 400px;
+                            width: 300px;">
+                <h5 style="color: white;margin-top: 10px;"> Giacca-camicia Jackson</h5>
+                <h6 style="color: white;">79,00$</h6>
+            </div>
+        </div>
+    </div>
 
     <div id="secondaPagina" class="secondaPagina">
 
@@ -70,7 +138,7 @@
     </div>
 
 
-    <h1 style="color: white; font-size:30px;text-align: center;margin-bottom: 10px;"> "Se non puoi essere elegante sii
+    <h1 class="h1Frase"> "Se non puoi essere elegante sii
         almeno stravagante." - Franco Moschino -
     </h1>
 
@@ -111,102 +179,6 @@
     </div>
 
 
-    <div id="quartaPagina"
-        style="display: flex; justify-content: center; align-items: center;width: 100%;height: 100vh;">
-        
-        <div>
-            <div id="contenitoreSinistra" style="background-color: black;width: 100%;height: 50vh;margin-top: 100px;">
-
-                <div id="PrimeDueMaglie" style="display: flex;">
-
-                    <img src="Immaginii/maglione marrone.webp" alt="maglione marrone"
-                        style="height: 40vh;width: 50%;border-right: solid 2px black;">
-
-                    <img src="Immaginii/maglione bianco.webp" alt="maglione bianco" style="height: 40vh;width: 50%;">
-
-                </div>
-
-                <div id="contenitoreFont" style="display: flex;">
-
-                    <div>
-
-
-                        <h5 style="font-size: 20px;color: white;margin-left: 20px;margin-top: 7px;">Lady White Co.
-                            Scollo a V
-                            trapuntato</h5>
-                        <h6 style="color: grey;font-size: 20px;margin-left: 20px;">350$</h6>
-
-
-                    </div>
-
-                    <div>
-                        <h5 style="font-size: 20px;color: white;margin-left: 80px;margin-top: 7px;">Felpa a maniche
-                            lunghe Lady White
-                        </h5>
-                        <h6 style="color: grey;font-size: 20px;margin-left: 80px;">240$</h6>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="contenitoreSinistra" style="width: 100%;height: 58vh;background-color: black;">
-
-                <div id="secondeMaglie" style="display: flex;">
-
-                    <img src="Immaginii/06_11_2023_JD_LW130T-BM_1_1.webp" alt="maglione marrone"
-                        style="height: 40vh;width: 50%;border-right: solid 2px black;">
-
-                    <img src="Immaginii/06-11-23-LS_LW1199TEX-SG_1_1.webp" alt="maglione bianco"
-                        style="height: 40vh;width: 50%;">
-
-                </div>
-
-                <div id="contenitoreFont" style="display: flex;">
-
-                    <div>
-
-                        <h5 style="font-size: 20px;color: white;margin-left: 20px;margin-top: 7px;">Pantaloni con fascia
-                            testurizzata Lady White Co.
-                        </h5>
-                        <h6 style="color: grey;font-size: 20px;margin-left: 20px;">120$</h6>
-
-                    </div>
-
-                    <div style="margin-left: 30px;">
-
-                        <h5 style="font-size: 20px;color: white;margin-left: 10px;margin-top: 7px;">Maglietta da rugby
-                            dei pesi massimi Lady White Co.
-                        </h5>
-                        <h6 style="color: grey;font-size: 20px;margin-left: 10px;">89$</h6>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-
-        <div id="contenitoreDestra" style="background-color: white;width: 50%;height: 95vh;margin-top: 4px;">
-
-            <h2 style="margin-left: 20px;margin-top: 15px;">
-                LADY WHITE CO.
-            </h2>
-
-            <h6 style="color: grey;margin-left: 20px;">Guarda ora.</h6>
-
-            <img src="Immaginii/immagine finale.avif" alt="modello con vestiti invernale"
-                style="width: 100%;height: 76.5vh;margin-top: 9px;">
-
-            <button style="background-color: white;width: 100%;height: 7vh;text-align: end;border: none;">
-                <h3 style="font-size: 25px;margin-right: 20px;margin-top: 7px;">Acquista ora > </h3>
-            </button>
-
-        </div>
-
-
-    </div>
 
 
 
