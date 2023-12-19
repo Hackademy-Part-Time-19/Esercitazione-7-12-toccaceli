@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presto.it</title>
+    <link rel="stylesheet" href="Css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="background-color: black;">
+
+
+    <nav class="navbar" style="position: fixed;">
+        <div style="display: flex;justify-content: space-between;align-items: center;">
+            <h3 class="logo">Presto</h3>
+            <a href="url_uomo" class="linkNavbar">Uomo</a>
+            <a href="url_donna" class="linkNavbar1">Donna</a>
+            <a href="url_bambini" class="linkNavbar1">Bambini</a>
+            <a href="url_ideeRegalo" class="linkNavbar1" style="text-decoration: none;">Regali</a>
+            <input id="Ricerca" placeholder="Search" class="navSearch">
+            <button onclick="Registrazione()" class="Btnregistrazione">Registrati</button>
+        </div>
+    </nav>
+
+    <div id="PrimaPagina" style="width: 100%;height: 100vh;">
+
+        <div id="containerPrimaPagina" style="width: 100%;height: 100px;">
+
+
+            <video width="100%" height="700px" style="margin-top: 30px;" autoplay loop muted playsinline>
+                <source src="Immaginii/H223_LEVIS_HOLIDAY_MO_DESKTOP_NoSound_10sec_2000x1125-0x720-2491k.mp4"
+                    type="video/mp4" />
+            </video>
+
+
+        </div>
+
+        <h3 style="font-size: 40px;  ;text-align: center;margin-top: 300px;color: white;">Esplora la nostra selezione
+        </h3>
+
+        <div style="position: relative;display: flex;justify-content: center;align-items: center;margin-top: 100px;">
+
+            <div class="filtroricerca">
+                <p style="color: white;margin-left: 5px;font-size: 20px;text-align: center;">Prodotto</p>
+                <select name="Prodotto" id="inputCategoria" class="selectFiltro">
+                    <option value="Uomo">Uomo</option>
+                    <option value="Donna">Donna</option>
+                    <option value="Bambino">Bambino</option>
+
+
+                </select>
+
+            </div>
+
+            <div class="filtroricerca">
+
+                <p style="color: white;margin-left: 5px;font-size: 20px;text-align: center;">Prezzo</p>
+                <select name="Prodotto" id="inputprezzo" class="selectFiltro" style="font-size: 17px;">
+                    <option value="prezzo">0-100$</option>
+                    <option value="prezzo1">100-300$</option>
+                    <option value="prezzo2">300-500$</option>
+                </select>
+
+
+            </div>
+
+            <button class="filtroricercaBtn">
+                <h4 style="text-align: center;color: white;margin-top: 10px;">Cerca</h4>
+            </button>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="Container"
+        style="display: flex;justify-content: center;align-items: center;width: 100%;;background-color: black;flex-wrap: wrap; margin-top: 30px;">
+
+        <div class="primeCard" style="background-color: white;flex-direction: column;display: flex;justify-content: center;align-items: center;margin: 20px;">
+            <div style="display: flex;justify-content: center;align-items: center"> <img src="Immaginii/giacca.jpeg" alt="Giacca" style="
+                    width: 80%;"></div>
+            <h5 style="color: black;margin-top: 10px;"> Giacca-camicia Jackson</h5>
+            <h6 style="color: black;">79,00$</h6>
+        </div>
+
+      
+       
+
+        
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script> Presto.js </script>
+</body>
+
+</html>
